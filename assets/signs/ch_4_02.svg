@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect x="4" y="8" width="92" height="84" rx="8" fill="#007A3D" stroke="#005A2D" stroke-width="1.5"/>
+  <rect x="18" y="38" width="64" height="7" rx="1.5" fill="#FFFFFF"/>
+  <polygon points="26,76 36,46 44,46 38,76" fill="#FFFFFF"/>
+  <polygon points="62,76 56,46 64,46 74,76" fill="#FFFFFF"/>
+  <!-- Bold Red Diagonal Slash -->
+  <line x1="82" y1="16" x2="18" y2="84" stroke="#D52B1E" stroke-width="8" stroke-linecap="round"/>
+</svg>

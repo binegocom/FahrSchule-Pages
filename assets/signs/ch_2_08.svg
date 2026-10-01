@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="shadowCir" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#FFFFFF" stroke="#D52B1E" stroke-width="10" filter="url(#shadowCir)"/>
+  <g fill="#111827" stroke="#111827">
+    
+  <!-- Bicycle top -->
+  <circle cx="34" cy="46" r="5" fill="none" stroke="#111827" stroke-width="2"/>
+  <circle cx="66" cy="46" r="5" fill="none" stroke="#111827" stroke-width="2"/>
+  <path d="M 34 46 L 46 46 L 54 36 L 66 46" fill="none" stroke="#111827" stroke-width="2"/>
+  <!-- Mofa bottom -->
+  <circle cx="34" cy="68" r="5" fill="none" stroke="#111827" stroke-width="2"/>
+  <circle cx="66" cy="68" r="5" fill="none" stroke="#111827" stroke-width="2"/>
+  <path d="M 34 68 L 46 68 L 54 58 L 66 68" fill="none" stroke="#111827" stroke-width="2"/>
+
+  </g>
+</svg>

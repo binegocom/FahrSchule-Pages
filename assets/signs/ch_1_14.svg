@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <polygon points="50,8 94,86 6,86" fill="#FFFFFF" stroke="#D52B1E" stroke-width="9.5" stroke-linejoin="round" filter="url(#shadow)"/>
+  <polygon points="50,15 86,81 14,81" fill="#FFFFFF"/>
+  <g fill="#111827" stroke="#111827">
+    
+  <!-- Mountain cliff on right -->
+  <path d="M 68 76 L 68 40 L 56 46 L 60 58 L 50 68 L 54 76 Z" fill="#111827" stroke="none"/>
+  <!-- Falling rocks -->
+  <polygon points="38,50 42,46 44,52 39,55" fill="#111827" stroke="none"/>
+  <polygon points="32,62 36,58 39,63 34,66" fill="#111827" stroke="none"/>
+  <polygon points="42,70 46,67 48,72 44,75" fill="#111827" stroke="none"/>
+
+  </g>
+</svg>

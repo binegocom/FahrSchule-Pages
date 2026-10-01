@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppression de compte & des données — FahrSchule Schweiz 🇨🇭</title>
+  <meta name="description" content="Guide de suppression de compte et effacement définitif des données pour l'application FahrSchule Schweiz selon Apple 5.1.1(v) et la nLPD suisse.">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="22" fill="#E9282C"/>
+            <rect x="42" y="20" width="16" height="60" rx="3" fill="#FFFFFF"/>
+            <rect x="20" y="42" width="60" height="16" rx="3" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">FahrSchule</span>
+          <span class="brand-subtitle">Suisse · Juridique</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="../../index.html" class="nav-link">Accueil</a>
+        <a href="../../fr/privacy/" class="nav-link">Confidentialité</a>
+        <a href="../../fr/terms/" class="nav-link">Conditions</a>
+        <a href="../../fr/support/" class="nav-link">Support & Aide</a>
+        <a href="../../fr/delete-account/" class="nav-link active">Suppression</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-selector">
+          <button class="lang-btn" id="currentLangBtn" type="button">
+            <span>🇫🇷 FR</span> <span style="font-size: 0.7rem;">▼</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="../../de/delete-account/" class="lang-option">🇨🇭 Deutsch</a>
+            <a href="../../fr/delete-account/" class="lang-option active">🇫🇷 Français</a>
+            <a href="../../it/delete-account/" class="lang-option">🇮🇹 Italiano</a>
+            <a href="../../en/delete-account/" class="lang-option">🇬🇧 English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="legal-page-header">
+    <div class="container">
+      <span class="section-eyebrow">Conformité Apple 5.1.1(v) & Google Play</span>
+      <h1>Suppression de compte & données</h1>
+      <div class="legal-meta">
+        <span>Contrôle intégral de vos données d'apprentissage</span>
+        <span>·</span>
+        <span>Contact : binego.com@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-content-wrap">
+    <div class="container">
+      <div class="legal-card">
+        <div class="legal-callout">
+          <p>
+            <strong>Transparence :</strong> L'application « FahrSchule Schweiz » n'exige aucun compte en ligne. Toutes vos statistiques d'examen et séries sont conservées uniquement sur votre appareil. Vous pouvez détruire définitivement toutes vos données grâce aux démarches ci-dessous.
+          </p>
+        </div>
+
+        <h2>Instructions étape par étape</h2>
+
+        <div class="step-container">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Réinitialisation dans l'application</h3>
+              <p>Effacez immédiatement l'intégralité des données locales :</p>
+              <ul style="margin-top: 10px; margin-bottom: 0;">
+                <li>Ouvrez l'application <strong>FahrSchule Schweiz</strong>.</li>
+                <li>Accédez à <strong>« Réglages »</strong> (icône d'engrenage).</li>
+                <li>Faites défiler jusqu'à <strong>« DONNÉES & STOCKAGE »</strong>.</li>
+                <li>Appuyez sur <strong>« Réinitialiser la progression et le cache »</strong>.</li>
+                <li>Confirmez la boîte de dialogue.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Désinstallation de l'application</h3>
+              <p>Sur iOS ou Android, la suppression de l'application détruit instantanément l'ensemble des fichiers locaux associés.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Confirmation formelle par e-mail</h3>
+              <div style="margin-top: 14px;">
+                <button type="button" class="btn btn-primary" onclick="sendDeletionRequestEmail()">
+                  🗑️ Demander confirmation à binego.com@gmail.com
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Contact</h2>
+        <p>
+          Pour toute demande : <a href="mailto:binego.com@gmail.com">binego.com@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-header site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>© 2026 FahrSchule Schweiz. Tous droits réservés.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="../../fr/privacy/">Confidentialité</a>
+          <span>·</span>
+          <a href="../../fr/terms/">Conditions</a>
+          <span>·</span>
+          <a href="../../fr/support/">Support</a>
+          <span>·</span>
+          <a href="../../fr/delete-account/">Suppression</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function sendDeletionRequestEmail() {
+      const subject = encodeURIComponent("[FahrSchule Suisse] Demande d'effacement de données (nLPD & RGPD)");
+      const body = encodeURIComponent(
+        "Madame, Monsieur,\n\n" +
+        "Par la présente, je sollicite la confirmation de l'effacement complet de mes données personnelles conformément à l'article 32 de la nLPD et à l'article 17 du RGPD.\n\n" +
+        "J'ai déjà procédé à la réinitialisation locale et à la désinstallation de l'application.\n\n" +
+        "Salutations distinguées"
+      );
+      window.location.href = `mailto:binego.com@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

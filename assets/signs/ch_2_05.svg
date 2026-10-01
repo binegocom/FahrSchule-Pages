@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="shadowCir" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#FFFFFF" stroke="#D52B1E" stroke-width="10" filter="url(#shadowCir)"/>
+  <g fill="#111827" stroke="#111827">
+    
+  <!-- Car front -->
+  <rect x="28" y="48" width="44" height="18" rx="5" fill="#111827" stroke="none"/>
+  <path d="M 34 48 L 40 36 L 60 36 L 66 48 Z" fill="#111827" stroke="none"/>
+  <circle cx="36" cy="58" r="3" fill="#FFFFFF" stroke="none"/>
+  <circle cx="64" cy="58" r="3" fill="#FFFFFF" stroke="none"/>
+  <rect x="42" y="58" width="16" height="4" rx="1" fill="#FFFFFF" stroke="none"/>
+  <rect x="26" y="66" width="8" height="6" rx="2" fill="#111827" stroke="none"/>
+  <rect x="66" y="66" width="8" height="6" rx="2" fill="#111827" stroke="none"/>
+
+  </g>
+</svg>

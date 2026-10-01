@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Dark Asphalt Road Surface -->
+  <rect width="100" height="100" rx="8" fill="#1E293B"/>
+  
+  <!-- Row of white triangles pointing toward oncoming driver -->
+  <polygon points="10,40 18,54 26,40" fill="#FFFFFF"/>
+  <polygon points="32,40 40,54 48,40" fill="#FFFFFF"/>
+  <polygon points="54,40 62,54 70,40" fill="#FFFFFF"/>
+  <polygon points="76,40 84,54 92,40" fill="#FFFFFF"/>
+
+</svg>

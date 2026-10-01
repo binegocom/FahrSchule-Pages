@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & Hilfe — FahrSchule Schweiz 🇨🇭</title>
+  <meta name="description" content="Offizielles Support- und Hilfe-Center für FahrSchule Schweiz. Fehlerbehebung, Kauf-Wiederherstellung, Prüfungsanmeldung und 48-Stunden Antwort-SLA.">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="22" fill="#E9282C"/>
+            <rect x="42" y="20" width="16" height="60" rx="3" fill="#FFFFFF"/>
+            <rect x="20" y="42" width="60" height="16" rx="3" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">FahrSchule</span>
+          <span class="brand-subtitle">Schweiz · Support</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="../../index.html" class="nav-link">Startseite</a>
+        <a href="../../de/privacy/" class="nav-link">Datenschutz</a>
+        <a href="../../de/terms/" class="nav-link">Nutzungsbedingungen</a>
+        <a href="../../de/support/" class="nav-link active">Support & Hilfe</a>
+        <a href="../../de/delete-account/" class="nav-link">Datenlöschung</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-selector">
+          <button class="lang-btn" id="currentLangBtn" type="button">
+            <span>🇨🇭 DE</span> <span style="font-size: 0.7rem;">▼</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="../../de/support/" class="lang-option active">🇨🇭 Deutsch</a>
+            <a href="../../fr/support/" class="lang-option">🇫🇷 Français</a>
+            <a href="../../it/support/" class="lang-option">🇮🇹 Italiano</a>
+            <a href="../../en/support/" class="lang-option">🇬🇧 English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="legal-page-header">
+    <div class="container">
+      <span class="section-eyebrow">Hilfe & Kundendienst</span>
+      <h1>Support Center & Fehlerbehebung</h1>
+      <div class="legal-meta">
+        <span>Garantierte Reaktionszeit: max. 48 Stunden SLA</span>
+        <span>·</span>
+        <span>Direktkontakt: binego.com@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-content-wrap">
+    <div class="container">
+      <div class="support-grid">
+        <div class="support-form-card">
+          <h2 style="font-size: 1.6rem; font-weight: 900; color: var(--navy-dark); margin-bottom: 8px;">
+            Nachricht an den Kundendienst
+          </h2>
+          <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;">
+            Fülle dieses Formular aus, um deine Anfrage mit den benötigten technischen Geräteangaben direkt vorzubereiten.
+          </p>
+
+          <form id="supportForm" onsubmit="event.preventDefault(); sendSupportEmail();">
+            <div class="form-group">
+              <label class="form-label" for="supportName">Dein Name</label>
+              <input type="text" id="supportName" class="form-input" placeholder="z.B. Anna Keller" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="supportCategory">Betroffene Ausweiskategorie</label>
+              <select id="supportCategory" class="form-select">
+                <option value="Kat. B (Auto)">Kategorie B (Personenwagen)</option>
+                <option value="Kat. A / A35 / A1 (Motorrad)">Kategorie A / A35 / A1 (Motorrad)</option>
+                <option value="Kat. C / C1 (Lastwagen)">Kategorie C / C1 (Lastwagen)</option>
+                <option value="Kat. D / D1 (Bus)">Kategorie D / D1 (Bus)</option>
+                <option value="Kat. BPT 121 (Taxi/Uber)">Kategorie BPT / Code 121 (Taxi & Uber)</option>
+                <option value="Kat. F / G / M">Kategorie F / G / M (Traktor/Mofa)</option>
+                <option value="Allgemeine Frage">Allgemeine Anfrage</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="supportDevice">Betriebssystem & Gerät</label>
+              <input type="text" id="supportDevice" class="form-input" placeholder="z.B. iPhone 15 Pro, iOS 18.2 oder Samsung Galaxy S24, Android 15" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="supportTopic">Thema der Anfrage</label>
+              <select id="supportTopic" class="form-select">
+                <option value="In-App-Kauf Wiederherstellung">In-App-Kauf nicht freigeschaltet / Wiederherstellen</option>
+                <option value="Fehler in Prüfungsfrage melden">Frage zu Prüfungsfrage oder Signal melden</option>
+                <option value="Technisches Problem / Absturz">Technisches Problem / Ton / App-Fehler</option>
+                <option value="Frage zur Theorieprüfung">Frage zur amtlichen Prüfung beim Strassenverkehrsamt</option>
+                <option value="Sonstiges">Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="supportMessage">Beschreibung des Anliegens</label>
+              <textarea id="supportMessage" class="form-textarea" rows="5" placeholder="Beschreibe das Problem so detailliert wie möglich..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              ✉️ Support-E-Mail Generieren
+            </button>
+          </form>
+
+          <div style="margin-top: 20px; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+            Oder schreibe direkt an: <a href="mailto:binego.com@gmail.com" style="font-weight: 700;">binego.com@gmail.com</a>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div class="support-sla-card">
+            <span class="sla-badge">⏱️ 48-Stunden Antwortgarantie</span>
+            <h3 style="font-size: 1.45rem; font-weight: 900; line-height: 1.2;">
+              Unser Service-Level-Agreement (SLA)
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #CBD5E1;">
+              Unser Support-Team bearbeitet jede Anfrage innerhalb von maximal 48 Stunden.
+            </p>
+            <ul style="padding-left: 20px; font-size: 0.92rem; color: #E2E8F0; display: flex; flex-direction: column; gap: 8px;">
+              <li>Kostenlose Unterstützung für alle Nutzer</li>
+              <li>Antworten auf Deutsch, Französisch, Italienisch & Englisch</li>
+              <li>Prüfung von Signalfragen durch Fahrlehrer-zertifizierte Experten</li>
+            </ul>
+          </div>
+
+          <div class="support-form-card" style="padding: 28px;">
+            <h4 style="font-size: 1.2rem; font-weight: 900; color: var(--navy-dark); margin-bottom: 14px;">
+              Schnelle Selbsthilfe
+            </h4>
+
+            <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.92rem;">
+              <div>
+                <strong>💳 Wie stelle ich frühere Käufe wieder her?</strong>
+                <p style="color: var(--text-secondary); margin-top: 4px;">
+                  Tippe in der App auf <em>Einstellungen → Käufe wiederherstellen</em>. Die erworbenen Module werden sofort aktiviert.
+                </p>
+              </div>
+
+              <div>
+                <strong>🔄 Ton oder Sprachausgabe funktioniert nicht?</strong>
+                <p style="color: var(--text-secondary); margin-top: 4px;">
+                  Prüfe den Stummschalter deines Telefons und die Medienlautstärke.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-header site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>© 2026 FahrSchule Schweiz. Alle Rechte vorbehalten.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="../../de/privacy/">Datenschutz</a>
+          <span>·</span>
+          <a href="../../de/terms/">Nutzung</a>
+          <span>·</span>
+          <a href="../../de/support/">Support</a>
+          <span>·</span>
+          <a href="../../de/delete-account/">Datenlöschung</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function sendSupportEmail() {
+      const name = document.getElementById('supportName').value;
+      const cat = document.getElementById('supportCategory').value;
+      const device = document.getElementById('supportDevice').value;
+      const topic = document.getElementById('supportTopic').value;
+      const message = document.getElementById('supportMessage').value;
+
+      const subject = encodeURIComponent(`[FahrSchule Support] ${topic} - ${name}`);
+      const body = encodeURIComponent(
+        `Hallo FahrSchule Schweiz Support-Team,\n\n` +
+        `Name: ${name}\n` +
+        `Kategorie: ${cat}\n` +
+        `Gerät & OS: ${device}\n` +
+        `Thema: ${topic}\n\n` +
+        `Beschreibung:\n${message}\n\n` +
+        `---\nGesendet über das offizielle Web-Support-Formular`
+      );
+
+      window.location.href = `mailto:binego.com@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <polygon points="50,8 94,86 6,86" fill="#FFFFFF" stroke="#D52B1E" stroke-width="9.5" stroke-linejoin="round" filter="url(#shadow)"/>
+  <polygon points="50,15 86,81 14,81" fill="#FFFFFF"/>
+  <g fill="#111827" stroke="#111827">
+    
+  <!-- Adult walking with child -->
+  <circle cx="46" cy="40" r="3.5" fill="#111827" stroke="none"/>
+  <path d="M 46 44 L 46 58 L 40 76 M 46 58 L 52 76 M 46 48 L 38 58 M 46 48 L 56 56" fill="none" stroke="#111827" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="62" cy="52" r="2.8" fill="#111827" stroke="none"/>
+  <path d="M 62 55 L 62 66 L 58 76 M 62 66 L 66 76 M 62 58 L 56 56" fill="none" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+
+  </g>
+</svg>

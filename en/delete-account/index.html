@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account & Data Erasure — FahrSchule Schweiz 🇨🇭</title>
+  <meta name="description" content="Step-by-step account and data deletion guide for the FahrSchule Schweiz app. Compliant with Apple Guideline 5.1.1(v), Google Play Store, and Swiss FADP.">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="22" fill="#E9282C"/>
+            <rect x="42" y="20" width="16" height="60" rx="3" fill="#FFFFFF"/>
+            <rect x="20" y="42" width="60" height="16" rx="3" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">FahrSchule</span>
+          <span class="brand-subtitle">Switzerland · Legal</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../../en/privacy/" class="nav-link">Privacy Policy</a>
+        <a href="../../en/terms/" class="nav-link">Terms of Service</a>
+        <a href="../../en/support/" class="nav-link">Support & Help</a>
+        <a href="../../en/delete-account/" class="nav-link active">Data Deletion</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-selector">
+          <button class="lang-btn" id="currentLangBtn" type="button">
+            <span>🇬🇧 EN</span> <span style="font-size: 0.7rem;">▼</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="../../de/delete-account/" class="lang-option">🇨🇭 Deutsch</a>
+            <a href="../../fr/delete-account/" class="lang-option">🇫🇷 Français</a>
+            <a href="../../it/delete-account/" class="lang-option">🇮🇹 Italiano</a>
+            <a href="../../en/delete-account/" class="lang-option active">🇬🇧 English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="legal-page-header">
+    <div class="container">
+      <span class="section-eyebrow">Apple 5.1.1(v) & Google Play Compliance</span>
+      <h1>Delete Account & Data Erasure</h1>
+      <div class="legal-meta">
+        <span>Complete autonomy over your educational records</span>
+        <span>·</span>
+        <span>Contact: binego.com@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-content-wrap">
+    <div class="container">
+      <div class="legal-card">
+        <div class="legal-callout">
+          <p>
+            <strong>Transparency Notice:</strong> FahrSchule Schweiz does not require user accounts, emails, or personal identification. All exam results, bookmarks, error lists, and settings are stored locally on your device in a sandboxed SQLite database. You can instantly and permanently purge all stored data using the methods below.
+          </p>
+        </div>
+
+        <h2>Step-by-Step Data Erasure Guide</h2>
+
+        <div class="step-container">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>In-App Reset (Instant Local Factory Wipe)</h3>
+              <p>Purge all progress directly from the app interface:</p>
+              <ul style="margin-top: 10px; margin-bottom: 0;">
+                <li>Launch <strong>FahrSchule Schweiz</strong> on your phone.</li>
+                <li>Tap <strong>«Settings»</strong> in the bottom navigation bar.</li>
+                <li>Scroll down to the <strong>«DATA & STORAGE»</strong> section.</li>
+                <li>Tap the red button labeled <strong>«Reset Learning Progress & Cache»</strong>.</li>
+                <li>Confirm the dialog. All local exam records, history, bookmarks, and streaks are immediately destroyed.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Operating System Removal (Uninstall Application)</h3>
+              <p>To eliminate the application and all associated sandboxed databases:</p>
+              <ul style="margin-top: 10px; margin-bottom: 0;">
+                <li><strong>On iOS (iPhone/iPad):</strong> Touch and hold the FahrSchule icon on your Home Screen → Select <em>«Remove App»</em> → Confirm <em>«Delete App»</em>. iOS immediately shreds all sandboxed data.</li>
+                <li><strong>On Android:</strong> Long press the app icon → Tap <em>«App info»</em> → <em>«Storage & cache»</em> → Tap <em>«Clear storage»</em> and then <em>«Uninstall»</em>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Formal Statutory Erasure Request via Email</h3>
+              <p>
+                If you require formal written verification of data erasure under Swiss FADP Art. 32 or EU GDPR Art. 17, use the button below:
+              </p>
+              <div style="margin-top: 16px;">
+                <button type="button" class="btn btn-primary" onclick="sendDeletionRequestEmail()">
+                  🗑️ Send Erasure Confirmation Request to binego.com@gmail.com
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Contact Data Protection Team</h2>
+        <p>
+          For any data protection inquiries:<br>
+          Email: <a href="mailto:binego.com@gmail.com">binego.com@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-header site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>© 2026 FahrSchule Schweiz. All rights reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="../../en/privacy/">Privacy</a>
+          <span>·</span>
+          <a href="../../en/terms/">Terms</a>
+          <span>·</span>
+          <a href="../../en/support/">Support</a>
+          <span>·</span>
+          <a href="../../en/delete-account/">Delete Account</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function sendDeletionRequestEmail() {
+      const subject = encodeURIComponent("[FahrSchule Schweiz] Statutory Data Erasure Request (revDSG & GDPR)");
+      const body = encodeURIComponent(
+        "To the Data Protection Officer at FahrSchule Schweiz / binego.com,\n\n" +
+        "I hereby request formal confirmation of complete data erasure regarding all personal data associated with my use of the FahrSchule Schweiz application pursuant to Swiss FADP Art. 32 and EU GDPR Art. 17.\n\n" +
+        "I confirm that I have executed the local in-app factory reset and uninstalled the application.\n\n" +
+        "Kind regards"
+      );
+      window.location.href = `mailto:binego.com@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
